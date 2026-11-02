@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.bytevirts/viewmax",
   "title": "ViewMax MCP",
-  "description": "Remote MCP for AI video, image, music and speech generation.",
-  "version": "1.0.0",
+  "description": "Official ViewMax Studio MCP: AI video, image, music, speech and sound effects.",
+  "version": "1.0.1",
   "websiteUrl": "https://viewmax.studio/mcp",
   "repository": {
     "url": "https://github.com/bytevirts/viewmax-mcp",
@@ -16,7 +16,7 @@
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer API key from ViewMax Settings > API Keys. Claude OAuth connectors can omit this.",
+          "description": "Bearer <VIEWMAX_API_KEY> from ViewMax Settings > API Keys. OAuth clients (claude.ai) can omit.",
           "isRequired": false,
           "isSecret": true
         }
