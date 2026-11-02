@@ -2,6 +2,8 @@
 
 Official remote MCP server for [ViewMax Studio](https://viewmax.studio/mcp). Generate AI video, images, music, and speech from Claude, Cursor, ChatGPT (Codex), or any MCP client.
 
+> **Official server.** This is the official ViewMax Studio MCP server, published by [bytevirts](https://github.com/bytevirts) as `io.github.bytevirts/viewmax` in the [official MCP Registry](https://registry.modelcontextprotocol.io). The only official endpoint is `https://viewmax.studio/api/mcp` on the `viewmax.studio` domain.
+
 **Endpoint:** `https://viewmax.studio/api/mcp`  
 **Docs:** https://viewmax.studio/docs/mcp
 
@@ -48,6 +50,14 @@ codex mcp add viewmax --url https://viewmax.studio/api/mcp --bearer-token-env-va
 ```
 
 Create an API key in ViewMax Settings → API Keys.
+
+## Agent skill
+
+This repo ships an agent skill at [`skills/viewmax/SKILL.md`](skills/viewmax/SKILL.md). It covers when to use ViewMax, how to connect, all 14 tools, and workflows for consistent-character long videos, images, music, speech, task polling and credits. Install it with:
+
+```bash
+npx skills add bytevirts/viewmax-mcp
+```
 
 ## Tools
 
