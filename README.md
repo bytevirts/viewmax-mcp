@@ -49,6 +49,28 @@ export VIEWMAX_API_KEY=YOUR_API_KEY
 codex mcp add viewmax --url https://viewmax.studio/api/mcp --bearer-token-env-var VIEWMAX_API_KEY
 ```
 
+### Cline
+
+```bash
+cline mcp add viewmax https://viewmax.studio/api/mcp --transport http --yes
+```
+
+Or add to `cline_mcp_settings.json`:
+
+```json
+{
+  "mcpServers": {
+    "viewmax": {
+      "url": "https://viewmax.studio/api/mcp",
+      "type": "streamableHttp",
+      "headers": {
+        "Authorization": "Bearer YOUR_API_KEY"
+      }
+    }
+  }
+}
+```
+
 Create an API key in ViewMax Settings → API Keys.
 
 ## Agent skill
